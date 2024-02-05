@@ -7,7 +7,6 @@ import "./Hero.scss";
 
 const Hero = () => {
   const [scrollValue, setScrollValue] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       // Получаем значение прокрутки страницы
@@ -34,6 +33,7 @@ const Hero = () => {
     // Убираем стили при размонтировании компонента
     return () => {
       document.body.style.backgroundColor = "initial";
+
     };
   }, [backgroundOpacity]);
 
@@ -41,10 +41,10 @@ const Hero = () => {
     // При окончании секции возвращаем экран плавно в белый цвет
     document.body.style.transition = "background-color 0.5s ease";
     document.body.style.backgroundColor = "white";
-
     // Убираем анимацию после завершения перехода
     setTimeout(() => {
       document.body.style.transition = "initial";
+      document.body.style.color = "white"
     }, 500);
   };
 
@@ -53,11 +53,11 @@ const Hero = () => {
       <div className="container">
         <div className="hero__wrapper">
           <div className="hero__top">
-            <p className="hero__text">Co-owner of companies </p>
-            <h2 className="hero__title">Nodir Pulatov</h2>
+            <p className={ !scrollValue ? "hero__text" : 'hero__text white'}>Co-owner of companies </p>
+            <h2 className={!scrollValue ? "hero__title" : "hero__title white"}>Nodir Pulatov</h2>
           </div>
           <div className="hero__content">
-            <p className="hero__text-btm">
+            <p className={!scrollValue ? "hero__text-btm" : "hero__text-btm white"}>
               Branding, websites and digital experiences, crafted with love,
               intelligence, precision and emotion.
             </p>

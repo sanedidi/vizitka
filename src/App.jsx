@@ -5,6 +5,7 @@ import Loading from './Components/Loading/Loading';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Present from './Components/Present/Present';
+import About from './Components/About/About';
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
     <Header />
     <Hero />
     <Present />
+    <About />
     </>
   );
 }
