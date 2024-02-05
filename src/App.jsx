@@ -18,11 +18,6 @@ function App() {
     <Header />
     <Hero />
     <Present />
-    <Present />
-    <Present />
-    <Present />
-    <Present />
-    <Present />
     </>
   );
 }
