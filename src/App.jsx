@@ -20,10 +20,6 @@ function App() {
     <Hero />
     <Present />
     <About />
-    <About />
-    <About />
-    <About />
-    <About />
     </>
   );
 }

@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { animateScroll as scroll } from "react-scroll";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Pagination } from "swiper/modules";
 import "./Hero.scss";
 
 const Hero = () => {
