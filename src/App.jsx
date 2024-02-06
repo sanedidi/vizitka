@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import Present from './Components/Present/Present';
 import About from './Components/About/About';
+import Group from './Components/Group/Group';
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
     <Hero />
     <Present />
     <About />
+    <Group />
     </>
   );
 }

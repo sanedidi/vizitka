@@ -1,0 +1,27 @@
+.group{
+    &__wrapper{}
+    &__title{
+        display: block;
+        margin: 0 auto;
+        h2{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+    }
+    .swiper-wrapper{
+        cursor: grab;
+        display: flex !important;
+        align-items: center !important;
+    }
+    .swiper{
+        img{
+            width: 100%;
+            max-width: 100px;
+        }
+    }
+
+      
+}
