@@ -1,9 +1,12 @@
-.group{
-    &__wrapper{}
-    &__title{
+.group {
+    
+    &__wrapper {
+    }
+    &__title {
         display: block;
         margin: 0 auto;
-        h2{
+        margin-bottom: 20px;
+        h2 {
             text-align: center;
             color: white;
             font-size: 30px;
@@ -11,17 +14,22 @@
             font-family: sans-serif;
         }
     }
-    .swiper-wrapper{
-        cursor: grab;
+    .swiper-wrapper {
         display: flex !important;
         align-items: center !important;
     }
-    .swiper{
-        img{
+    .swiper {
+        display: flex;
+        a {
+            display: block;
+            width: max-content;
+        }
+        img {
             width: 100%;
             max-width: 100px;
         }
     }
 
-      
+    .swiper-slide{
+    }
 }
