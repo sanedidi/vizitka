@@ -14,7 +14,7 @@ import Footer from './Components/Footer/Footer';
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 33);
+    setTimeout(() => setLoading(false), 3300);
   }, []);
   if (loading) {
     return <Loading />;
@@ -28,7 +28,10 @@ function App() {
     <Partners />
     <Group />
     <AboutComp />
+    <div>
+    <h2 className='req__title'>For cooperation, leave a request below</h2>
     <Request />
+    </div>
     <Footer />
     </>
   );
