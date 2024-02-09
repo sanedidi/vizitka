@@ -113,23 +113,42 @@
 .css-1wnsr1i{
     border-radius: 8px;
     background-color: rgb(22, 20, 20) !important;
+    width: 100% !important;
+    max-width: 500px !important;
 }
 
 
 .newslatter{
     form{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 10px 10px; 
+        grid-template-areas: 
+          "header__text-name header__text-tel"
+          "header__text-info header__text-info"
+          "header__btn header__btn"; 
+      }
+      .header__btn { grid-area: header__btn; }
+      .header__text-info { grid-area: header__text-info; }
+      .header__text-name { grid-area: header__text-name; }
+      .header__text-tel { grid-area: header__text-tel; }
         input{
-            padding: 5px;
+            padding: 10px;
             border-radius: 3px;
             border: none;
+            width: 100%;
         }
         button{
             padding: 5px;
             background-color: rgb(146, 144, 144);
             border-radius: 3px;
         }
+        .info{
+            width: 205%;
+            height: 30px;
+            max-width: 500px;
+            padding: 20px;
+        }
     }
-}

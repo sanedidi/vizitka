@@ -36,7 +36,7 @@ const Group = () => {
             </a>
           </SwiperSlide>
           <SwiperSlide className="swiper">
-            <a target="_blank" href="">
+            <a target="_blank" href="https://mn-solutions.uz/">
               <img src={mnSolutions} alt="" />
             </a>
           </SwiperSlide>

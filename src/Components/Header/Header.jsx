@@ -7,6 +7,7 @@ import Modal from "@mui/material/Modal";
 
 import "react-modern-drawer/dist/index.css";
 import axios from "axios";
+import { info } from "sass";
 
 const style = {
   position: "absolute",
@@ -42,12 +43,12 @@ const Header = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-
-  const [name, setName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const token = '6817047605:AAEnX2sc0K_eVzH6qXLFn8OJmALVCx60DiY';
-  const chat_id = '-4167825371';
-  const apiUrl = 'https://api.telegram.org/bot' + token + '/sendMessage';
+  const [name, setName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [Info, setInfo] = useState("");
+  const token = "6817047605:AAEnX2sc0K_eVzH6qXLFn8OJmALVCx60DiY";
+  const chat_id = "-4167825371";
+  const apiUrl = "https://api.telegram.org/bot" + token + "/sendMessage";
 
   const sendMessage = (text) => {
     axios.get(apiUrl, {
@@ -60,33 +61,31 @@ const Header = () => {
 
   const subscribeHandler = (e) => {
     e.preventDefault();
-    
+
     // Check if both name and phoneNumber are not empty
-    if (name.trim() !== '' && phoneNumber.trim() !== '') {
-      sendMessage(`Name: ${name}\nPhone Number: ${phoneNumber}`);
+    if (name.trim() !== "" && phoneNumber.trim() !== "" && info.trim() !== "") {
+      sendMessage(`Name: ${name}\nPhone Number: ${phoneNumber}\nInfo: ${Info}`);
       // Clear input values
-      setName('');
-      setPhoneNumber('');
+      setName("");
+      setPhoneNumber("");
+      setInfo("");
       // Additional actions upon subscription, if needed
     }
   };
-
 
   return (
     <header className="header">
       <div className="container">
         <div className="header__wrapper">
-
           <div className={`header__links`}>
-            <button className="header__link" >Контакты</button>
+            <button className="header__link">Контакты</button>
             <button className="header__link">О себе</button>
-
           </div>
           <div className="header__logo">
             <h1 className="header__title">Nodir Pulatov</h1>
           </div>
           <div className="header__dev">
-          <button className="header__link link" onClick={handleOpen}>
+            <button className="header__link link" onClick={handleOpen}>
               Сотрудничество
             </button>
           </div>
@@ -104,7 +103,7 @@ const Header = () => {
           >
             {" "}
             <div className="header__mobile">
-              <button className="header__link"  >Контакты</button>
+              <button className="header__link">Контакты</button>
               <button className="header__link">О себе</button>
               <button className="header__link" onClick={handleOpen}>
                 Сотрудничество
@@ -121,27 +120,34 @@ const Header = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-        <div className='newslatter'>
-        <form onSubmit={subscribeHandler}>
-          <input
-            type='text'
-            placeholder='Your name'
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <input
-            type='tel'
-            placeholder='Phone number'
-            value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
-          />
-          <button type='submit'>Subscribe</button>
-        </form>
-      </div>
+          <div className="newslatter">
+            <form onSubmit={subscribeHandler}>
+              <input
+              className="header__text name"
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                type="tel"
+                className="header__text tel"
+                placeholder="Phone Number"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
+              />
+              <input
+                type="text"
+                className="header__text info"
+                placeholder="Describe Your Proposal In More Detail"
+                value={Info}
+                onChange={(e) => setInfo(e.target.value)}
+              />
+              <button className="header__btn" type="submit">Subscribe</button>
+            </form>
+          </div>
         </Box>
       </Modal>
-      
-      
     </header>
   );
 };
