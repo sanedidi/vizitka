@@ -2,17 +2,7 @@
     margin: clamp(6.25rem, 3.409rem + 14.2vw, 14.063rem) 0;
     position: relative;
 
-    &::after{
-        content: 'Pulatovs Corp';
-        position: absolute;
-        font-size: clamp(4.375rem, 2.784rem + 7.95vw, 8.75rem);
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-        color: rgba(128, 128, 128, 0.234);
-    }
+
     &__wrapper{
         display: flex;
         flex-direction: column;

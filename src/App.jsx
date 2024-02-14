@@ -11,10 +11,11 @@ import Partners from './Components/Partners/Partners';
 import AboutComp from './Components/AboutComp/AboutComp';
 import Request from './Components/Tgrequest/Request';
 import Footer from './Components/Footer/Footer';
+import PreHero from './Components/PreHero/PreHero';
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3300);
+    setTimeout(() => setLoading(false), 33);
   }, []);
   if (loading) {
     return <Loading />;
@@ -22,8 +23,9 @@ function App() {
   return (
     <>
     <Header />
+    {/* <Present /> */}
+    <PreHero />
     <Hero />
-    <Present />
     <About />
     <Partners />
     <Group />
