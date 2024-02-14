@@ -12,9 +12,9 @@
         z-index: -1;
         color: rgba(128, 128, 128, 0.234);
         width: 100%;
-        // @media (max-wi) {
-            
-        // }
+        @media (max-width:786px) {
+            display: none;
+        }
     }
     &__wrapper{
         margin-top: clamp(6.25rem, 3.977rem + 11.36vw, 12.5rem);
