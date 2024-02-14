@@ -62,7 +62,7 @@
     }
     &__title-main{
         text-align: center;
-        font-size: 60px;
+        font-size: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
         color: #fff;
         font-family: sans-serif;
         margin: 10px 0;
