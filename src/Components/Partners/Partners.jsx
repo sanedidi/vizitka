@@ -19,7 +19,7 @@ const Partners = () => {
       <div className="container">
         <div className="group__wrapper">
           <div className="group__title">
-            <h2>Our Partnerss</h2>
+            <h2>Our Partners</h2>
           </div>
           <Swiper
             centeredSlides={true}
@@ -46,11 +46,6 @@ const Partners = () => {
             <SwiperSlide className="swiper">
               <a target="_blank" href="https://seceom.uz/">
                 <img src={seceom} alt="" />
-              </a>
-            </SwiperSlide>
-            <SwiperSlide className="swiper">
-              <a target="_blank" href="https://ivideon.uz/">
-                <img src={ivideon} alt="" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
@@ -83,11 +78,7 @@ const Partners = () => {
                 <img src={seceom} alt="" />
               </a>
             </SwiperSlide>
-            <SwiperSlide className="swiper">
-              <a target="_blank" href="https://ivideon.uz/">
-                <img src={ivideon} alt="" />
-              </a>
-            </SwiperSlide>
+
             <SwiperSlide className="swiper">
               <a target="_blank" href="https://ivideonbiznes.uz/">
                 <img src={ivideon} alt="" />

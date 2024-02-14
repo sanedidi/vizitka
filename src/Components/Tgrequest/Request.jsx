@@ -79,7 +79,7 @@ const Request = () => {
                 value={Info}
                 onChange={(e) => setInfo(e.target.value)}
               />
-              <button className="req__btn" type="submit">Subscribe</button>
+              <button className="req__btn" type="submit">Send</button>
             </form>
           </div>
             </div>

@@ -12,6 +12,7 @@ import AboutComp from './Components/AboutComp/AboutComp';
 import Request from './Components/Tgrequest/Request';
 import Footer from './Components/Footer/Footer';
 import PreHero from './Components/PreHero/PreHero';
+import Contacts from './Components/Contacts/Contacts';
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -27,10 +28,14 @@ function App() {
     <PreHero />
     <Hero />
     <About />
-    <Partners />
     <Group />
-    <AboutComp />
+    <Partners />
+    {/* <AboutComp /> */}
+    <Contacts />
     <div>
+      <h2 className="req__title-main">
+        Request Form
+      </h2>
     <h2 className='req__title'>For cooperation, leave a request below</h2>
     <Request />
     </div>

@@ -1,15 +1,6 @@
 .footer {
     margin: 100px 0 20px;
-    &__wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        @media (max-width:992px) {
-            grid-template-columns: 1fr;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-        }
-    }
+
     &__left {
         display: flex;
         flex-direction: column;
@@ -67,6 +58,12 @@
     }
     &__whats{
         width: max-content;
+    }
+    &__rights{
+        color: #fff;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 15px;
     }
 }
 .gg{

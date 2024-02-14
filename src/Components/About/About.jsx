@@ -11,13 +11,12 @@ const About = () => {
           </div>
           <div className="about__title">
             <h2>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-              sapiente repellat ad maxime doloremque sunt, cumque sint porro
-              tenetur dolor ipsa perspiciatis pariatur corrupti autem possimus
-              maiores saepe cupiditate impedit doloribus inventore similique
-              quisquam quod! At vitae tempora iusto alias voluptatibus voluptate
-              quidem accusantium quibusdam, adipisci, ex ea corrupti!
-              Voluptatibus?
+                    <span>Lorem  .</span>           Welcome! I'm Pulatov Nodir  Alimdjanovich, an experienced entrepreneur dedicated to
+              driving innovation and achieving excellence in business. With a
+              passion for collaboration and a commitment to making a positive
+              impact, I've successfully led ventures across various industries.
+              Join me as we push boundaries and redefine what's possible. Thanks
+              for visiting!
             </h2>
           </div>
         </div>
