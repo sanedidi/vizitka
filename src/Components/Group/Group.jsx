@@ -11,12 +11,13 @@ import anor from "../../assets/logo3.png";
 
 import { Autoplay, Pagination } from "swiper/modules";
 import "./Group.scss";
+import { t } from "i18next";
 const Group = () => {
   return (
     <section className="group">
       <div className="group__wrapper">
         <div className="group__title">
-          <h2>Group Of Companies</h2>
+          <h2>{t("group")}</h2>
         </div>
         <Swiper
           centeredSlides={true}

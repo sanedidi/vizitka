@@ -13,13 +13,16 @@ import engy from "./../../assets/engy.png";
 import fabit from "./../../assets/fabit.png";
 import gs from "./../../assets/gs.png";
 import abHandshake from "./../../assets/abhandshake.jpg";
+import { useTranslation } from "react-i18next";
 const Partners = () => {
+  const {t}=useTranslation()
+
   return (
     <section className="group">
       <div className="container">
         <div className="group__wrapper">
           <div className="group__title">
-            <h2>Our Partners</h2>
+            <h2>{t("part")}</h2>
           </div>
           <Swiper
             centeredSlides={true}

@@ -8,6 +8,7 @@ import Modal from "@mui/material/Modal";
 import "react-modern-drawer/dist/index.css";
 import axios from "axios";
 import { info } from "sass";
+import { useTranslation } from "react-i18next";
 
 const style = {
   position: "absolute",
@@ -69,8 +70,13 @@ const Header = () => {
       setName("");
       setPhoneNumber("");
       setInfo("");
-      // Additional actions upon subscription, if needed
     }
+  };
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
   };
 
   return (
@@ -78,15 +84,16 @@ const Header = () => {
       <div className="container">
         <div className="header__wrapper">
           <div className={`header__links`}>
-            <button className="header__link">Контакты</button>
-            <button className="header__link">О себе</button>
+            <button className="header__link">{t("link")}</button>
+            <button onClick={()=> changeLanguage("eng")} className="header__link">ENG</button>
+            <button onClick={()=> changeLanguage("rus")} className="header__link">RU</button>
           </div>
           <div className="header__logo">
             <h1 className="header__title">Nodir Pulatov</h1>
           </div>
           <div className="header__dev">
             <button className="header__link link" onClick={handleOpen}>
-              Сотрудничество
+              {t("corp")}
             </button>
           </div>
           <div onClick={toggleDrawer} className="header__burger">
@@ -103,10 +110,10 @@ const Header = () => {
           >
             {" "}
             <div className="header__mobile">
-              <button className="header__link">Контакты</button>
-              <button className="header__link">О себе</button>
+              <button className="header__link">{t("link")}</button>
+              <button className="header__link">{t("link1")}</button>
               <button className="header__link" onClick={handleOpen}>
-                Сотрудничество
+              {t("link2")}
               </button>
             </div>
           </Drawer>
@@ -143,7 +150,7 @@ const Header = () => {
                 value={Info}
                 onChange={(e) => setInfo(e.target.value)}
               />
-              <button className="header__btn" type="submit">Subscribe</button>
+              <button className="header__btn" type="submit">{t("btn")}</button>
             </form>
           </div>
         </Box>

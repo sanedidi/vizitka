@@ -3,6 +3,7 @@ import './Request.scss'
 import axios from 'axios';
 import { useState } from 'react';
 import { info } from "sass";
+import { useTranslation } from 'react-i18next';
 const Request = () => {
     
     const [showNewLatter, setShowNewLatter] = useState(false);
@@ -52,6 +53,8 @@ const Request = () => {
         // Additional actions upon subscription, if needed
       }
     };
+  const { t } = useTranslation();
+    
   return (
     <section className='req'>
         <div className="container">
@@ -79,7 +82,7 @@ const Request = () => {
                 value={Info}
                 onChange={(e) => setInfo(e.target.value)}
               />
-              <button className="req__btn" type="submit">Send</button>
+              <button className="req__btn" type="submit">{t("btn")}</button>
             </form>
           </div>
             </div>

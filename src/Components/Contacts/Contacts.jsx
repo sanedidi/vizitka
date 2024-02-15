@@ -1,16 +1,19 @@
 import React from "react";
 import "./Contacts.scss";
+import { useTranslation } from "react-i18next";
 
 const Contacts = () => {
+  const {t}=useTranslation()
+
   return (
     <section className="cont">
       <div className="container">
-          <h2 className="cont__title">Contacts</h2>
+          <h2 className="cont__title">{t("cont")}</h2>
         <div className="cont__wrapper">
           <div className="cont__left">
             <div className="cont__info">
               <div className="cont__content">
-                <p className="cont__cont">Phone Number </p>
+                <p className="cont__cont">{t("cont")} </p>
                 <a href="" className="cont__num">
                   {" "}
                   +998 (99) 802 22 00{" "}
@@ -21,7 +24,7 @@ const Contacts = () => {
                 </a>
               </div>
               <div className="cont__content">
-                <p className="cont__cont">Office Number </p>
+                <p className="cont__cont">{t("off")} </p>
                 <a href="" className="cont__num">
                   +998 (55) 501 51 15
                 </a>
@@ -33,7 +36,7 @@ const Contacts = () => {
             </div>
             <div className="footer__soc">
                 <h2 className="footer__title">
-                   Social Media
+                   {t("soc")}
                 </h2>
               <div className="gg">
                 <div className="footer__inst">
