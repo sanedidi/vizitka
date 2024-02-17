@@ -82,18 +82,21 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
+        
         <div className="header__wrapper">
           <div className={`header__links`}>
             <a href="#cont" className="header__link">{t("link")}</a>
-
           </div>
           <div className="header__logo">
             <h1 className="header__title">Nodir Pulatov</h1>
           </div>
+
           <div className="header__dev">
             <button className="header__link link" onClick={handleOpen}>
               {t("corp")}
             </button>
+            <button onClick={()=> changeLanguage("eng")} className="header__link lang">ENG</button>
+            <button onClick={()=> changeLanguage("rus")} className="header__link lang">RU</button>
           </div>
           <div onClick={toggleDrawer} className="header__burger">
             <span></span>
@@ -109,8 +112,7 @@ const Header = () => {
           >
             {" "}
             <div className="header__mobile">
-              <button onClick={()=> changeLanguage("eng")} className="header__link lang">ENG</button>
-            <button onClick={()=> changeLanguage("rus")} className="header__link lang">RU</button>
+
               <a href="#cont"  className="header__link" onClick={handleOpen}>
               {t("link2")}
               </a>
