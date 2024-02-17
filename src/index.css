@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container{
   width:95%;
   max-width: 1200px;

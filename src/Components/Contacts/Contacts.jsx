@@ -6,15 +6,15 @@ const Contacts = () => {
   const {t}=useTranslation()
 
   return (
-    <section className="cont">
+    <section  className="cont">
       <div className="container">
           <h2 className="cont__title">{t("cont")}</h2>
-        <div className="cont__wrapper">
+        <div   className="cont__wrapper">
           <div className="cont__left">
             <div className="cont__info">
               <div className="cont__content">
                 <p className="cont__cont">{t("cont")} </p>
-                <a href="" className="cont__num">
+                <a href="" id="cont" className="cont__num">
                   {" "}
                   +998 (99) 802 22 00{" "}
                 </a>
