@@ -1,0 +1,40 @@
+.pulatov {
+  height: 50vh;
+}
+.pulatov::after {
+  content: "Pulatovs Corp";
+  position: absolute;
+  font-size: clamp(1.875rem, -1.534rem + 17.05vw, 11.25rem);
+  letter-spacing: 10px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  color: rgba(128, 128, 128, 0.234);
+  width: 100%;
+}
+@media (max-width: 786px) {
+  .pulatov::after {
+    display: none;
+  }
+}
+.pulatov__wrapper {
+  margin-top: clamp(9.375rem, 8.239rem + 5.68vw, 12.5rem);
+}
+.pulatov__title {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: clamp(3.75rem, 2.841rem + 4.55vw, 6.25rem);
+}
+@media (max-width: 786px) {
+  .pulatov__title {
+    font-size: clamp(1.75rem, 0.841rem + 4.55vw, 6.25rem);
+  }
+}
+.pulatov__text {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.25rem, 0.341rem + 4.55vw, 3.75rem);
+}/*# sourceMappingURL=Prehero.css.map */

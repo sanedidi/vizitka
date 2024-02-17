@@ -1,0 +1,55 @@
+.req form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "req__text-name req__text-tel" "req__text-info req__text-info" "req__btn req__btn";
+}
+.req .req__btn {
+  grid-area: req__btn;
+}
+.req .req__text-info {
+  grid-area: req__text-info;
+}
+.req .req__text-name {
+  grid-area: req__text-name;
+}
+.req .req__text-tel {
+  grid-area: req__text-tel;
+}
+.req__text {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+}
+.req__text.name {
+  border-radius: 3px;
+}
+.req__text.tel {
+  border-radius: 3px;
+}
+.req__text.info {
+  width: 200%;
+  display: block;
+  padding: 10px;
+  height: 115px;
+  border-radius: 3px;
+  text-align: center;
+}
+.req__btn {
+  padding: 5px;
+  background-color: rgb(198, 198, 198);
+  border-radius: 3px;
+  margin: 0 auto;
+  width: 100%;
+}
+.req__title-main {
+  text-align: center;
+  font-size: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
+  color: #fff;
+  font-family: sans-serif;
+  margin: 10px 0;
+}
+.req__title {
+  color: rgb(181, 178, 178);
+}/*# sourceMappingURL=Request.css.map */

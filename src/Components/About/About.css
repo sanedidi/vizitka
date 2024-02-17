@@ -1,0 +1,29 @@
+.about {
+  margin: 100px 0;
+}
+.about__top h2 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: sans-serif;
+  text-align: center;
+  color: #fff;
+}
+.about__title h2 {
+  font-size: clamp(0.75rem, 0.523rem + 1.14vw, 1.375rem);
+  font-weight: 600;
+  color: rgb(200, 200, 200);
+  font-family: sans-serif;
+  text-align: start;
+  width: 100%;
+}
+.about__title h2 span {
+  color: transparent;
+}
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}/*# sourceMappingURL=About.css.map */

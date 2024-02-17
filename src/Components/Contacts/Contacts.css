@@ -1,0 +1,71 @@
+.cont {
+  margin: 50px 0;
+}
+.cont__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 786px) {
+  .cont__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.cont__cont {
+  font-size: 25px;
+  font-family: sans-serif;
+  color: #fff;
+}
+.cont__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+.cont__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 786px) {
+  .cont__info {
+    align-items: start;
+  }
+}
+.cont__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cont__right {
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 786px) {
+  .cont__right {
+    height: 300px;
+    width: 100%;
+  }
+}
+.cont__num {
+  font-size: 20px;
+  color: #afa3a3;
+  font-family: sans-serif;
+}
+.cont__title {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0px 0 50px;
+}
+.cont .footer__soc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.cont .footer__title {
+  font-size: 25px !important;
+}/*# sourceMappingURL=Contacts.css.map */

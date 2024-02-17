@@ -32,7 +32,7 @@ const Header = () => {
 
   const handleCloseNewLatter = () => {
     setShowNewLatter(false);
-    setMenuOpen(false); // Close the burger menu as well
+    setMenuOpen(false);
   };
 
   const [isOpen, setIsOpen] = React.useState(false);
@@ -85,8 +85,7 @@ const Header = () => {
         <div className="header__wrapper">
           <div className={`header__links`}>
             <button className="header__link">{t("link")}</button>
-            <button onClick={()=> changeLanguage("eng")} className="header__link">ENG</button>
-            <button onClick={()=> changeLanguage("rus")} className="header__link">RU</button>
+
           </div>
           <div className="header__logo">
             <h1 className="header__title">Nodir Pulatov</h1>
@@ -110,8 +109,8 @@ const Header = () => {
           >
             {" "}
             <div className="header__mobile">
-              <button className="header__link">{t("link")}</button>
-              <button className="header__link">{t("link1")}</button>
+              <button onClick={()=> changeLanguage("eng")} className="header__link lang">ENG</button>
+            <button onClick={()=> changeLanguage("rus")} className="header__link lang">RU</button>
               <button className="header__link" onClick={handleOpen}>
               {t("link2")}
               </button>

@@ -1,0 +1,55 @@
+.comps {
+  margin: 100px 0;
+}
+.comps__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.comps__comp {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .comps__comp {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.comps__logo {
+  width: 100%;
+  max-width: 205px;
+}
+.comps__logo img {
+  width: 100%;
+}
+.comps__desc a {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: sans-serif;
+  line-height: 25px;
+}
+@media (max-width: 992px) {
+  .comps__desc a {
+    max-height: 7em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    line-height: 1.4;
+  }
+}
+
+.soft {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (max-width: 992px) {
+  .soft {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=AboutComp.css.map */
