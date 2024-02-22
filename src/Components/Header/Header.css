@@ -8,7 +8,7 @@
 }
 @media (max-width: 786) {
   .header__wrapper {
-    justify-content: none;
+    display: block;
   }
 }
 .header__links {
@@ -46,7 +46,7 @@
     align-items: center;
     gap: 5px;
     position: absolute;
-    top: 20px;
+    top: 26px;
     right: 30px;
   }
 }
@@ -86,6 +86,16 @@
   justify-content: center;
   margin-top: auto;
   height: 100%;
+}
+.header__dev {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 450px) {
+  .header__dev {
+    gap: 0;
+  }
 }
 
 .EZDrawer {
@@ -148,4 +158,7 @@
 
 .lang {
   margin: 0 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }/*# sourceMappingURL=Header.css.map */
