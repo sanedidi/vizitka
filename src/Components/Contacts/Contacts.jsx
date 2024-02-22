@@ -142,7 +142,7 @@ const Contacts = () => {
                   </a>
                 </div>
                 <div className="footer__whats">
-                  <a href="https://www.facebook.com/nodir.pulatov.16?mibextid=LQQJ4d">
+                  <a target="_blank" href="https://www.facebook.com/nodir.pulatov.16?mibextid=LQQJ4d">
                     <svg
                       width="30"
                       height="30"
