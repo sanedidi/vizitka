@@ -15,7 +15,7 @@ import { useTranslation } from "react-i18next";
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3);
+    setTimeout(() => setLoading(false), 3300);
   }, []);
   const { t } = useTranslation();
   if (loading) {

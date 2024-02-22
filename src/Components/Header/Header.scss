@@ -93,6 +93,11 @@
         margin-top: auto;
         height: 100%;
     }
+    &__dev{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 
@@ -159,4 +164,7 @@
 
     .lang{
         margin: 0 10px;
+        display:flex;
+        gap: 5px;
+        align-items:center;
     }

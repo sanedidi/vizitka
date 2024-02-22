@@ -82,11 +82,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        
         <div className="header__wrapper">
-          <div className={`header__links`}>
-            <a href="#cont" className="header__link">{t("link")}</a>
-          </div>
           <div className="header__logo">
             <h1 className="header__title">Nodir Pulatov</h1>
           </div>
@@ -95,8 +91,97 @@ const Header = () => {
             <button className="header__link link" onClick={handleOpen}>
               {t("corp")}
             </button>
-            <button onClick={()=> changeLanguage("eng")} className="header__link lang">ENG</button>
-            <button onClick={()=> changeLanguage("rus")} className="header__link lang">RU</button>
+            <div className={`header__links`}>
+            <a href="#cont" className="header__link">{t("link")}</a>
+          </div>
+            <button
+              onClick={() => changeLanguage("eng")}
+              className="header__link lang"
+            >
+              ENG{" "}
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 81 61"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_5136_23060)">
+                  <path
+                    d="M0.0859375 0.177734H80.0859V60.1777H0.0859375"
+                    fill="#BD3D44"
+                  />
+                  <path
+                    d="M0.0859375 7.08984H80.0859ZM0.0859375 16.3023H80.0859ZM0.0859375 25.5523H80.0859ZM0.0859375 34.8023H80.0859ZM0.0859375 44.0523H80.0859ZM0.0859375 53.3023H80.0859Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M0.0859375 7.08984H80.0859M0.0859375 16.3023H80.0859M0.0859375 25.5523H80.0859M0.0859375 34.8023H80.0859M0.0859375 44.0523H80.0859M0.0859375 53.3023H80.0859"
+                    stroke="white"
+                    stroke-width="4.625"
+                  />
+                  <path
+                    d="M0.0859375 0.177734H45.6859V32.4902H0.0859375"
+                    fill="#192F5D"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_5136_23060">
+                    <rect
+                      width="80"
+                      height="60"
+                      fill="white"
+                      transform="translate(0.0859375 0.177734)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button
+              onClick={() => changeLanguage("rus")}
+              className="header__link lang"
+            >
+              RU
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 81 61"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_5136_23070)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.265625 0.269531H80.2656V60.2695H0.265625V0.269531Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.265625 20.2695H80.2656V60.2695H0.265625V20.2695Z"
+                    fill="#0039A6"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.265625 40.2695H80.2656V60.2695H0.265625V40.2695Z"
+                    fill="#D52B1E"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_5136_23070">
+                    <rect
+                      width="80"
+                      height="60"
+                      fill="white"
+                      transform="translate(0.265625 0.269531)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            
           </div>
           <div onClick={toggleDrawer} className="header__burger">
             <span></span>
@@ -112,9 +197,8 @@ const Header = () => {
           >
             {" "}
             <div className="header__mobile">
-
-              <a href="#cont"  className="header__link" onClick={handleOpen}>
-              {t("link2")}
+              <a href="#cont" className="header__link" onClick={handleOpen}>
+                {t("link2")}
               </a>
             </div>
           </Drawer>
@@ -131,7 +215,7 @@ const Header = () => {
           <div className="newslatter">
             <form onSubmit={subscribeHandler}>
               <input
-              className="header__text name"
+                className="header__text name"
                 type="text"
                 placeholder="Your Name"
                 value={name}
@@ -151,7 +235,9 @@ const Header = () => {
                 value={Info}
                 onChange={(e) => setInfo(e.target.value)}
               />
-              <button className="header__btn" type="submit">{t("btn")}</button>
+              <button className="header__btn" type="submit">
+                {t("btn")}
+              </button>
             </form>
           </div>
         </Box>
