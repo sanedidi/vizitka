@@ -11,9 +11,8 @@
         }
     }
     &__right{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        display: block;
+        margin: 0 auto;
     }
     &__wrapper{
         display: flex;

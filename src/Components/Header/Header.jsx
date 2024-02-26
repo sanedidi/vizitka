@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Header.scss";
-
 import Drawer from "react-modern-drawer";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
@@ -88,12 +87,7 @@ const Header = () => {
           </div>
 
           <div className="header__dev">
-            <button className="header__link link" onClick={handleOpen}>
-              {t("corp")}
-            </button>
-            <div className={`header__links`}>
-            <a href="#cont" className="header__link">{t("link")}</a>
-          </div>
+            
             <button
               onClick={() => changeLanguage("eng")}
               className="header__link lang"
@@ -183,25 +177,6 @@ const Header = () => {
             </button>
             
           </div>
-          <div onClick={toggleDrawer} className="header__burger">
-            <span></span>
-            <span></span>
-            <span className="header__span"></span>
-          </div>
-          <Drawer
-            open={isOpen}
-            onClose={toggleDrawer}
-            direction="left"
-            className="bla bla bla"
-            size={"80%"}
-          >
-            {" "}
-            <div className="header__mobile">
-              <a href="#cont" className="header__link" onClick={handleOpen}>
-                {t("link2")}
-              </a>
-            </div>
-          </Drawer>
         </div>
       </div>
 

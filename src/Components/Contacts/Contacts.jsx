@@ -20,7 +20,7 @@ const Contacts = () => {
                 </a>
                 <a href="" className="cont__num">
                   {" "}
-                  +998 (90) 959 51 15{" "}
+                  +998 (99) 008 08 80{" "}
                 </a>
               </div>
               <div className="cont__content">

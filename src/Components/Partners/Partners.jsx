@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
+import teoco from '../../assets/teoco.png'
 import { Autoplay, Pagination } from "swiper/modules";
 
 import "../Group/Group";
@@ -79,6 +79,11 @@ const Partners = () => {
             <SwiperSlide className="swiper">
               <a target="_blank" href="https://seceom.uz/">
                 <img src={seceom} alt="" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide className="swiper">
+              <a target="_blank" href="https://seceom.uz/">
+                <img src={teoco} alt="" />
               </a>
             </SwiperSlide>
 
