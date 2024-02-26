@@ -2,8 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import teoco from '../../assets/teoco.png'
+import nokia from '../../assets/nokia.png'
 import { Autoplay, Pagination } from "swiper/modules";
-
 import "../Group/Group";
 import smart from "./../../assets/smart4.png";
 import rusiem from "./../../assets/rusiem.png";
@@ -54,6 +54,11 @@ const Partners = () => {
             <SwiperSlide className="swiper">
               <a target="_blank" href="https://ivideonbiznes.uz/">
                 <img src={engy} alt="" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide className="swiper">
+              <a target="_blank" href="https://ivideonbiznes.uz/">
+                <img src={nokia} alt="" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">

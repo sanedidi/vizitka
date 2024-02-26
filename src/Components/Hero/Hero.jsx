@@ -44,9 +44,9 @@ const Hero = () => {
     <div className="hero" onScroll={handleSectionEnd}>
       <div className="container">
         <div className="hero__wrapper">
-          <div className="hero__left">
+          {/* <div className="hero__left">
             <img src={man} alt="" />
-          </div>
+          </div> */}
           <div className="hero__right">
           <div className="hero__top">
             <p className={ !scrollValue ? "hero__text" : 'hero__text white'}>{t("name")} </p>
