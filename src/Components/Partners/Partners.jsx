@@ -57,7 +57,7 @@ const Partners = () => {
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a target="_blank" href="https://ivideonbiznes.uz/">
+              <a target="_blank" href="https://www.nokia.com/">
                 <img src={nokia} alt="" />
               </a>
             </SwiperSlide>
@@ -87,7 +87,7 @@ const Partners = () => {
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a target="_blank" href="https://seceom.uz/">
+              <a target="_blank" href="https://www.teoco.com/">
                 <img src={teoco} alt="" />
               </a>
             </SwiperSlide>
