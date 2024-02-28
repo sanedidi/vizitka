@@ -42,17 +42,17 @@ const Partners = () => {
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a target="_blank" href="">
+              <a target="_blank" href="https://rusiem.com/">
                 <img src={rusiem} alt="" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a target="_blank" href="https://seceom.uz/">
+              <a target="_blank" href="https://www.seceon.com/">
                 <img src={seceom} alt="" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a target="_blank" href="https://ivideonbiznes.uz/">
+              <a target="_blank" href="https://en-gy.ru/">
                 <img src={engy} alt="" />
               </a>
             </SwiperSlide>
@@ -62,27 +62,27 @@ const Partners = () => {
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a target="_blank" href="https://en-gy.ru/">
+              <a target="_blank" href="https://fabit.ru/">
                 <img src={fabit} alt="" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a href="https://gslevel.uz/">
+              <a href="https://www.gi-de.com/en/">
                 <img src={gs} alt="" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a target="_blank" href="https://mn-soft.uz/">
+              <a target="_blank" href="https://abhandshake.com/">
                 <img src={abHandshake} alt="" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a target="_blank" href="https://mn-solutions.uz/">
+              <a target="_blank" href="https://rusiem.com/">
                 <img src={rusiem} alt="" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a target="_blank" href="https://seceom.uz/">
+              <a target="_blank" href="https://www.seceon.com/">
                 <img src={seceom} alt="" />
               </a>
             </SwiperSlide>
@@ -93,17 +93,17 @@ const Partners = () => {
             </SwiperSlide>
 
             <SwiperSlide className="swiper">
-              <a target="_blank" href="https://ivideonbiznes.uz/">
+              <a target="_blank" href="https://ru.ivideon.com/">
                 <img src={ivideon} alt="" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a target="_blank" href="https://en-gy.ru/">
+              <a target="_blank" href="https://fabit.ru/">
                 <img src={fabit} alt="" />
               </a>
             </SwiperSlide>
             <SwiperSlide className="swiper">
-              <a target="_blank" href="https://gslevel.uz/">
+              <a target="_blank" href="https://www.gi-de.com/en/">
                 <img src={gs} alt="" />
               </a>
             </SwiperSlide>
