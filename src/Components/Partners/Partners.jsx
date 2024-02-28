@@ -5,7 +5,6 @@ import teoco from '../../assets/teoco.png'
 import nokia from '../../assets/nokia.png'
 import { Autoplay, Pagination } from "swiper/modules";
 import "../Group/Group";
-import smart from "./../../assets/smart4.png";
 import rusiem from "./../../assets/rusiem.png";
 import seceom from "./../../assets/seceon.png";
 import ivideon from "./../../assets/ivideon.png";
@@ -36,11 +35,6 @@ const Partners = () => {
             modules={[Autoplay, Pagination]}
             className="mySwiper"
           >
-            <SwiperSlide className="swiper">
-              <a target="_blank" href="https://mn-soft.uz/">
-                <img src={smart} alt="" />
-              </a>
-            </SwiperSlide>
             <SwiperSlide className="swiper">
               <a target="_blank" href="https://rusiem.com/">
                 <img src={rusiem} alt="" />
