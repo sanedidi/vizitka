@@ -8,6 +8,7 @@ import Navin from "../../assets/logo2.png";
 import Pba from "../../assets/PBAbiznes.jpg";
 import sss from "../../assets/sss.jpg";
 import anor from "../../assets/logo3.png";
+import slik from '../../assets/silk.png'
 
 import { Autoplay, Pagination } from "swiper/modules";
 import "./Group.scss";
@@ -34,6 +35,11 @@ const Group = () => {
           <SwiperSlide className="swiper">
             <a target="_blank" href="https://mn-soft.uz/">
               <img src={mnSoft} alt="" />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide className="swiper">
+            <a target="_blank" href="https://mn-soft.uz/">
+              <img src={slik} alt="" />
             </a>
           </SwiperSlide>
           <SwiperSlide className="swiper">
